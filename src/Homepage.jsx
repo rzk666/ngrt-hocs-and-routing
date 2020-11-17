@@ -1,5 +1,5 @@
 import React from 'react';
-import { withLogger } from './libs';
+import WithLogger from './hocs/WithLogger';
 
 const Homepage = () => (
   <div>
@@ -7,4 +7,4 @@ const Homepage = () => (
   </div>
 );
 
-export default withLogger(Homepage);
+export default WithLogger(Homepage);
