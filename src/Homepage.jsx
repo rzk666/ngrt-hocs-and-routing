@@ -1,10 +1,10 @@
 import React from 'react';
 import { withLogger } from './libs';
 
-const MyComponent = () => (
+const Homepage = () => (
   <div>
-    test
+    Home page
   </div>
 );
 
-export default withLogger(MyComponent);
+export default withLogger(Homepage);

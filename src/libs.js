@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const withLogger = (Component) => () => {
+export const withLogger = (Component) => (props) => {
   console.log('I AM LOGGER');
   console.log('NOW I AM LOGGING');
   console.log('WOKRING...');
@@ -10,6 +10,6 @@ export const withLogger = (Component) => () => {
   console.log(5 > 2 ? 'YES' : 'NO');
   console.log('DONE');
   return (
-    <Component />
+    <Component {...props} />
   );
 };

@@ -1,13 +1,17 @@
 import React from 'react';
-import { withLogger } from './libs';
 
 const NavBar = () => {
   const x = 5;
   return (
-    <div>
-      test
-    </div>
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      height: '100px',
+      width: '100vw',
+      backgroundColor: '#fff000',
+    }}
+    />
   );
 };
 
-export default withLogger(NavBar);
+export default NavBar;
