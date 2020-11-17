@@ -1,7 +1,8 @@
 import React from 'react';
+// Routing
 import { Link, useHistory } from 'react-router-dom';
-import WithLogger from './hocs/WithLogger';
-import WithLayout from './hocs/WithLayout';
+// HOCs
+import page from './hocs/page';
 
 const About = (props) => {
   const { history } = useHistory();
@@ -26,4 +27,4 @@ const About = (props) => {
   );
 };
 
-export default WithLayout(WithLogger(About));
+export default page(About);
