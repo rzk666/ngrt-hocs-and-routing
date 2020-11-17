@@ -1,5 +1,7 @@
 import React from 'react';
 import WithLogger from './hocs/WithLogger';
+import WithLayout from './hocs/WithLayout';
+import WithAuth from './hocs/WithAuth';
 
 const Homepage = () => (
   <div>
@@ -7,4 +9,4 @@ const Homepage = () => (
   </div>
 );
 
-export default WithLogger(Homepage);
+export default WithAuth(WithLayout(WithLogger(Homepage)));
